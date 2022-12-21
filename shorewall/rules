@@ -8,4 +8,7 @@
 ?SECTION NEW
 SSH(ACCEPT) net fw
 
+ACCEPT ha fw 1,112
+SSH(ACCEPT) ha fw
+
 #LAST LINE -- DO NOT REMOVE
