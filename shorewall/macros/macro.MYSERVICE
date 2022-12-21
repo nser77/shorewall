@@ -1,5 +1,0 @@
-#TARGET  SOURCE  DEST    PROTO   DPORT   SPORT   ORIGDEST        RATE    USER
-
-PARAM    -       -       tcp     81
-
-#LAST LINE -- DO NOT REMOVE
