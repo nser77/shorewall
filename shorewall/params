@@ -1,4 +1,4 @@
-NET_IF=
-NET_IF_OPTIONS=
-HA_IF=
-HA_IF_OPTIONS=
+NET_IF=ens160
+NET_IF_OPTIONS=tcpflags,logmartians,nosmurfs
+HA_IF=ens192
+HA_IF_OPTIONS=tcpflags,logmartians,nosmurfs
