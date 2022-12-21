@@ -8,7 +8,8 @@
 ACCEPT net fw 1
 SSH(ACCEPT) net fw
 
-ACCEPT ha fw 1,112
+ACCEPT ha fw 1
 SSH(ACCEPT) ha fw
+VRRP(ACCEPT) ha fw
 
 #LAST LINE -- DO NOT REMOVE
