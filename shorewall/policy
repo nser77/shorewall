@@ -1,0 +1,15 @@
+#SOURCE         DEST            POLICY          LOG LEVEL       LIMIT:BURST
+
+fw              all             ACCEPT          -               -
+
+net             fw              DROP            INFO            -
+
+ha              fw              DROP            INFO            -
+
+net             all             REJECT          INFO            -
+
+ha              all             REJECT          INFO            -
+
+all             all             REJECT          INFO            -
+
+#LAST LINE -- DO NOT REMOVE
