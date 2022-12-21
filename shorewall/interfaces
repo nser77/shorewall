@@ -1,0 +1,9 @@
+#ZONE   INTERFACE       BROADCAST       OPTIONS
+
+-       lo              detect          ignore
+
+net     ens160          -               tcpflags,logmartians,nosmurfs
+
+ha      ens192          -               tcpflags,logmartians,nosmurfs
+
+#LAST LINE -- DO NOT REMOVE
