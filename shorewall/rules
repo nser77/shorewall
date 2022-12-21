@@ -5,6 +5,7 @@
 #SECTION RELATED
 ?SECTION NEW
 
+ACCEPT net fw 1
 SSH(ACCEPT) net fw
 
 ACCEPT ha fw 1,112
