@@ -2,8 +2,8 @@
 
 -       lo              detect          ignore
 
-net     ens160          -               tcpflags,logmartians,nosmurfs
+net     $NET_IF         -               $NET_IF_OPTIONS
 
-ha      ens192          -               tcpflags,logmartians,nosmurfs
+ha      $HA_IF          -               $HA_IF_OPTIONS
 
 #LAST LINE -- DO NOT REMOVE
