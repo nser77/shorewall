@@ -1,0 +1,3 @@
+#ACTION SOURCE  DEST    PROTO   DPORT   SPORT   ORIGDEST        RATE    USER
+
+PARAM   -       -       udp     10000-20000
