@@ -2,13 +2,10 @@
 
 Shorewall repository for a server installation.
 
-The repo was tested with the following versions:
+The repo was tested with ``` Shorewall 5.2.3.4 ```.
+
+Remeber to eneble Shorewall daemon:
 
 ```
-Distributor ID: Ubuntu
-Description:    Ubuntu 22.04.1 LTS
-Release:        22.04
-Codename:       jammy
-
-Shorewall:      5.2.3.4 
+root@jammy:/home/user# if [ "$(systemctl is-enabled shorewall)" == "disabled" ]; then systemctl enable shorewall; fi
 ```
