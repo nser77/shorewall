@@ -2,3 +2,4 @@ NET_IF=ens160
 NET_IF_OPTIONS=tcpflags,logmartians,nosmurfs
 HA_IF=ens192
 HA_IF_OPTIONS=tcpflags,logmartians,nosmurfs,optional
+VIP_SERVICE_01=192.168.1.250
