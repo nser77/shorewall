@@ -5,8 +5,8 @@
 #SECTION RELATED
 ?SECTION NEW
 
-ACCEPT net fw 1
-SSH(ACCEPT) net fw
+ACCEPT management,monitoring fw 1
+SSH(ACCEPT) management fw
 
 ACCEPT ha fw 1
 SSH(ACCEPT) ha fw

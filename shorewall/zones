@@ -1,9 +1,0 @@
-#ZONE       TYPE            OPTIONS         IN OPTIONS              OUT OPTIONS
-
-fw          firewall        -               -                       -
-
-net         ipv4            -               -                       -
-
-ha          ipv4            -               -                       -
-
-#LAST LINE -- DO NOT REMOVE
