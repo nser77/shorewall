@@ -2,7 +2,7 @@
 
 Shorewall repository for a server installation.
 
-The repo was tested with ``` Shorewall 5.2.3.4 ```.
+The repo was tested with ``` Shorewall 5.0, 5.1, 5.2 ```.
 
 Remeber to eneble Shorewall daemon:
 
