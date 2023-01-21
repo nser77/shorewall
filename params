@@ -2,6 +2,7 @@ NET_IF=ens160
 NET_IF_OPTIONS=tcpflags,logmartians,nosmurfs
 WG_IF=wg0
 WG_IF_OPTIONS=tcpflags,logmartians,nosmurfs,optional
+WG_SOURCE_IP_01=10.0.0.2
 HA_IF=ens192
 HA_IF_OPTIONS=tcpflags,logmartians,nosmurfs,optional
 VIP_SERVICE_01=192.168.1.250
