@@ -1,6 +1,6 @@
 # shorewall
 
-Shorewall repository for a server installation.
+Shorewall repository for a server installation wit HA and WIREGUARD support.
 
 The repo was tested with ``` Shorewall 5.0, 5.1 and 5.2 ```.
 
