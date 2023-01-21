@@ -4,9 +4,13 @@ fw              all             ACCEPT          -               -
 
 net             fw              DROP            INFO            -
 
+wg              fw              DROP            INFO            -
+
 ha              fw              DROP            INFO            -
 
 net             all             REJECT          INFO            -
+
+wg              all             REJECT          INFO            -
 
 ha              all             REJECT          INFO            -
 
