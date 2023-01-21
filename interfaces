@@ -2,7 +2,9 @@
 
 -       lo              detect          ignore
 
--       $NET_IF         -               $NET_IF_OPTIONS
+net     $NET_IF         -               $NET_IF_OPTIONS
+
+wg      $WG_IF          -               $WG_IF_OPTIONS
 
 ha      $HA_IF          -               $HA_IF_OPTIONS
 
