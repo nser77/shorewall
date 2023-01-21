@@ -1,4 +1,14 @@
+#
+# Shorewall - SNAT/Masquerade File
+#
+# For information about entries in this file, type "man shorewall-snat"
+#
+# See http://shorewall.net/manpages/shorewall-snat.html for additional information
+###################################################################################################################
+#ACTION         SOURCE          DEST            PROTO   PORT   IPSEC  MARK   USER    SWITCH  ORIGDEST   PROBABILITY
 
-SNAT($VIP_SERVICE_01) - $NET_IF - - - 100
+MASQUERADE      10.0.0.2        $NET_IF
+
+#SNAT($VIP_SERVICE_01) - $NET_IF - - - 100
 
 #LAST LINE -- DO NOT REMOVE
