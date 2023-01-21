@@ -3,8 +3,8 @@
 fw firewall
 
 net ipv4
-mgmt:net ipv4
-mon:net ipv4
+
+wg ipv4
 
 ha ipv4
 
