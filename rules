@@ -5,8 +5,11 @@
 #SECTION RELATED
 ?SECTION NEW
 
-ACCEPT mgmt,mon fw 1
-SSH(ACCEPT) mgmt fw
+ACCEPT net fw 17 13123
+
+ACCEPT wg fw icmp
+SSH(ACCEPT) wg fw
+ACCEPT wg net
 
 ACCEPT ha fw 1
 SSH(ACCEPT) ha fw
