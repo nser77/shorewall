@@ -6,9 +6,11 @@ wg              net             ACCEPT          -               -
 
 net             fw              DROP            INFO            -
 
+ha              fw              DROP            INFO            -
+
 wg              fw              DROP            INFO            -
 
-ha              fw              DROP            INFO            -
+wg              ha              DROP            INFO            -
 
 wg              wg              DROP            INFO            -
 
