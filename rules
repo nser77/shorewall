@@ -9,7 +9,6 @@ ACCEPT net fw 17 13122,13123
 
 ACCEPT wg fw icmp
 SSH(ACCEPT) wg fw
-ACCEPT wg net
 
 ACCEPT ha fw 1
 SSH(ACCEPT) ha fw
