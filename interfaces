@@ -4,7 +4,9 @@
 
 net     $NET_IF         -               $NET_IF_OPTIONS
 
-wg      $WG_IF          -               $WG_IF_OPTIONS
+wg      wg0             -               $WG_IF_OPTIONS
+
+wg      wg1             -               $WG_IF_OPTIONS
 
 ha      $HA_IF          -               $HA_IF_OPTIONS
 
