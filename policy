@@ -8,6 +8,8 @@ wg              fw              DROP            INFO            -
 
 ha              fw              DROP            INFO            -
 
+wg              wg              DROP            INFO            -
+
 net             all             REJECT          INFO            -
 
 wg              all             REJECT          INFO            -
