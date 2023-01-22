@@ -2,6 +2,8 @@
 
 fw              all             ACCEPT          -               -
 
+wg              net             ACCEPT          -               -
+
 net             fw              DROP            INFO            -
 
 wg              fw              DROP            INFO            -
