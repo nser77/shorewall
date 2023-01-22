@@ -5,10 +5,14 @@
 #SECTION RELATED
 ?SECTION NEW
 
-ACCEPT net fw 17 13122,13123
+ACCEPT net fw 17 13122
+ACCEPT net fw 17 13123
+
+SSH(ACCEPT) net:xxx.xxx.xxx.xxx fw
+SSH(ACCEPT) net:xxx.xxx.xxx.xxx fw
 
 ACCEPT wg fw icmp
-SSH(ACCEPT) wg fw
+SSH(ACCEPT) wg:10.0.0.2 fw
 
 ACCEPT ha fw 1
 SSH(ACCEPT) ha fw
