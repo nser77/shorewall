@@ -1,6 +1,16 @@
-#MARK           SOURCE          DEST            PROTO   DEST    SOURCE  USER    TEST    LENGTH  TOS
-#                                                       PORT(S) PORT(S)
+#
+# Shorewall -- /etc/shorewall/mangle
+#
+# For information about entries in this file, type "man shorewall-mangle"
+#
+# See http://shorewall.net/traffic_shaping.htm for additional information.
+# For usage in selecting among multiple ISPs, see
+# http://shorewall.net/MultiISP.html
+#
+# See http://shorewall.net/PacketMarking.html for a detailed description of
+# the Netfilter/Shorewall packet marking mechanism.
+#
+##############################################################################################################################################################
+#ACTION         SOURCE          DEST            PROTO   DPORT   SPORT   USER    TEST    LENGTH  TOS     CONNBYTES       HELPER  PROBABILITY     DSCP    SWITCH
 
 #MARK(100)       fw              0.0.0.0/0       udp     -       10000:20000,4000:4999
-
-#LAST LINE -- DO NOT REMOVE
