@@ -1,0 +1,11 @@
+#
+# Shorewall -- /etc/shorewall/routes
+#
+# For information about entries in this file, type "man shorewall-routes"
+#
+# For additional information, see http://www.shorewall.net/MultiISP.html
+#
+###############################################################################
+#PROVIDER               DEST                    GATEWAY         DEVICE  OPTIONS
+
+main                    10.7.165.0/24            -               wg2
