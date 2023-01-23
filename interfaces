@@ -1,13 +1,21 @@
-#ZONE   INTERFACE       BROADCAST       OPTIONS
+#
+# Shorewall -- /etc/shorewall/interfaces
+#
+# For information about entries in this file, type "man shorewall-interfaces"
+#
+# The manpage is also online at
+# http://www.shorewall.net/manpages/shorewall-interfaces.html
+#
+?FORMAT 2
+###############################################################################
+#ZONE           INTERFACE               OPTIONS
 
--       lo              detect          ignore
+-               lo                      ignore
 
-net     $NET_IF         -               $NET_IF_OPTIONS
+net             $NET_IF                 $NET_IF_OPTIONS
 
-wg      wg0             -               $WG_IF_OPTIONS
+wg              wg0                     $WG_IF_OPTIONS
 
-wg      wg1             -               $WG_IF_OPTIONS
+wg              wg1                     $WG_IF_OPTIONS
 
-ha      $HA_IF          -               $HA_IF_OPTIONS
-
-#LAST LINE -- DO NOT REMOVE
+wg              wg2                     $WG_IF_OPTIONS
