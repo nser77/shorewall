@@ -26,6 +26,7 @@
 NET_IF=ens160
 NET_IF_OPTIONS=tcpflags,logmartians,nosmurfs
 
+WG_ZONE=wg
 WG_IF_OPTIONS=tcpflags,logmartians,nosmurfs,optional
 WG0_NET=10.150.0.0/30
 WG1_NET=10.150.0.4/30
