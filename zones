@@ -13,6 +13,6 @@ fw              firewall
 
 net             ipv4
 
-$WG_ZONE        ipv4
+wg              ipv4
 
 ha              ipv4
