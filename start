@@ -9,8 +9,10 @@
 #
 ###############################################################################
 
-ip link add l0 type dummy
-ip addr add 10.254.254.1 dev l0
-ip link set l0 up
+if ! ip link show l0 >/dev/null 2>&1; then
+        ip link add l0 type dummy
+        ip addr add 10.254.254.1 dev l0
+        ip link set l0 up
+fi
 
 return 0
