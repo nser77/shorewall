@@ -11,22 +11,22 @@
 
 fw              all             ACCEPT          -               -
 
-$WG_ZONE        net             ACCEPT          -               -
+wg              net             ACCEPT          -               -
 
 net             fw              DROP            INFO            -
 
 ha              fw              DROP            INFO            -
 
-$WG_ZONE        fw              DROP            INFO            -
+wg              fw              DROP            INFO            -
 
-$WG_ZONE        ha              DROP            INFO            -
+wg              ha              DROP            INFO            -
 
-$WG_ZONE        $WG_ZONE        DROP            INFO            -
+wg              wg              DROP            INFO            -
 
 net             all             REJECT          INFO            -
 
 ha              all             REJECT          INFO            -
 
-$WG_ZONE        all             REJECT          INFO            -
+wg              all             REJECT          INFO            -
 
 all             all             REJECT          INFO            -
