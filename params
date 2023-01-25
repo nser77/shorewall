@@ -25,8 +25,13 @@
 
 NET_IF=ens160
 NET_IF_OPTIONS=tcpflags,logmartians,nosmurfs
+
 WG_IF_OPTIONS=tcpflags,logmartians,nosmurfs,optional
-WG_NAT_SOURCE_01=10.0.0.0/24
+WG0_NET=10.150.0.0/30
+WG1_NET=10.150.0.4/30
+WG2_NET=10.150.0.8/30
+
 HA_IF=ens192
 HA_IF_OPTIONS=tcpflags,logmartians,nosmurfs,optional
+
 VIP_SERVICE_01=10.1.2.3
