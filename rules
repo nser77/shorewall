@@ -17,14 +17,23 @@
 ?SECTION NEW
 
 
-ACCEPT net fw 17 13122
-ACCEPT net fw 17 13123
+ACCEPT net fw 17 
 
-SSH(ACCEPT) net:xxx.xxx.xxx.xxx fw
-SSH(ACCEPT) net:xxx.xxx.xxx.xxx fw
+SSH(ACCEPT) net:94.176.46.33 fw
+SSH(ACCEPT) net:79.153.90.251 fw
 
 ACCEPT wg fw icmp
-SSH(ACCEPT) wg:10.0.0.2 fw
+DNS(ACCEPT) wg fw
+
+ACCEPT wg:10.150.0.8/30 wg:10.150.0.0/30 icmp
+ACCEPT wg:10.150.0.8/30 wg:10.0.20.0/28 icmp
+ACCEPT wg:10.150.0.8/30 wg:10.150.0.4/30 icmp
+
+SSH(ACCEPT) wg:10.150.0.10 fw
+SSH(ACCEPT) wg:10.150.0.8/30 wg:10.0.20.0/28
+SSH(ACCEPT) wg:10.150.0.8/30 wg:10.150.0.4/30
+
+ACCEPT wg:10.150.0.8/30 wg:10.150.0.0/30 6 8291,22322,443
 
 ACCEPT ha fw 1
 SSH(ACCEPT) ha fw
