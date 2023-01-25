@@ -9,10 +9,10 @@
 ###############################################################################
 #ZONE           TYPE            OPTIONS         IN_OPTIONS      OUT_OPTIONS
 
-fw firewall
+fw              firewall
 
-net ipv4
+net             ipv4
 
-wg ipv4
+$WG_ZONE        ipv4
 
-ha ipv4
+ha              ipv4
