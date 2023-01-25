@@ -10,9 +10,6 @@ Remeber to eneble Shorewall daemon:
 if [ "$(systemctl is-enabled shorewall)" == "disabled" ]; then systemctl enable shorewall; fi
 ```
 
-## Loopback for DNS
-SHOREWALL's start and stop scripts create ```dummy``` interface that could be used as global DNS for all peers.
-
 ## WIREGUARD
 If you want to use this configuration with WIREGUARD, setup your VPN-Server then adapt the file ```params``` as you need.
 
