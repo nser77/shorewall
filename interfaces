@@ -14,8 +14,8 @@
 
 net             $NET_IF                 $NET_IF_OPTIONS
 
-wg              wg0                     $WG_IF_OPTIONS
+$WG_ZONE        wg0                     $WG_IF_OPTIONS
 
-wg              wg1                     $WG_IF_OPTIONS
+$WG_ZONE        wg1                     $WG_IF_OPTIONS
 
-wg              wg2                     $WG_IF_OPTIONS
+$WG_ZONE        wg2                     $WG_IF_OPTIONS
