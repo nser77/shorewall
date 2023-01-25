@@ -23,19 +23,20 @@
 #
 ###############################################################################
 
-NET_IF=ens160
+NET_IF=ens3
 NET_IF_OPTIONS=tcpflags,logmartians,nosmurfs
-NET_WHITELIST=1.1.1.1,2.2.2.2
+NET_WHITELIST=1.1.1.1
+
+WG_IF_OPTIONS=tcpflags,logmartians,nosmurfs,optional
 
 WG_BINDING_01=13122
 WG_BINDING_02=13123
 WG_BINDING_03=13124
 WG_BINDING=$WG_BINDING_01,$WG_BINDING_02,$WG_BINDING_03
-WG_ZONE=wg
-WG_IF_OPTIONS=tcpflags,logmartians,nosmurfs,optional
-WG0_NET=10.150.0.0/30
-WG1_NET=10.150.0.4/30
-WG2_NET=10.150.0.8/30
+
+WG0_NET0=10.150.0.0/30
+WG1_NET4=10.150.0.4/30
+WG2_NET8=10.150.0.8/30
 
 HA_IF=ens192
 HA_IF_OPTIONS=tcpflags,logmartians,nosmurfs,optional
