@@ -8,5 +8,6 @@
 ###########################################################################################################################################
 #ACTION                 SOURCE                  DEST            PROTO   PORT    IPSEC   MARK    USER    SWITCH  ORIGDEST        PROBABILITY
 
-MASQUERADE $WG_NAT_SOURCE_01 $NET_IF
-SNAT($VIP_SERVICE_01) - $NET_IF - - - 100
+MASQUERADE              $WG0_NET                $NET_IF
+
+#SNAT($VIP_SERVICE_01)   -                       $NET_IF         -       -       -       100
