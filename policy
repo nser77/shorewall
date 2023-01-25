@@ -7,26 +7,26 @@
 # http://www.shorewall.net/manpages/shorewall-policy.html
 #
 ###############################################################################
-#SOURCE         DEST            POLICY  LOGLEVEL        RATE    CONNLIMIT
+#SOURCE         DEST            POLICY         LOGLEVEL        RATE    CONNLIMIT
 
 fw              all             ACCEPT          -               -
 
-wg              net             ACCEPT          -               -
+$WG_ZONE        net             ACCEPT          -               -
 
 net             fw              DROP            INFO            -
 
 ha              fw              DROP            INFO            -
 
-wg              fw              DROP            INFO            -
+$WG_ZONE        fw              DROP            INFO            -
 
-wg              ha              DROP            INFO            -
+$WG_ZONE        ha              DROP            INFO            -
 
-wg              wg              DROP            INFO            -
+$WG_ZONE        $WG_ZONE        DROP            INFO            -
 
 net             all             REJECT          INFO            -
 
 ha              all             REJECT          INFO            -
 
-wg              all             REJECT          INFO            -
+$WG_ZONE        all             REJECT          INFO            -
 
 all             all             REJECT          INFO            -
