@@ -1,0 +1,16 @@
+#
+# Shorewall -- /etc/shorewall/start
+#
+# Add commands below that you want to be executed after shorewall has
+# been started, reloaded or restarted.
+#
+# See http://shorewall.net/shorewall_extension_scripts.htm for additional
+# information.
+#
+###############################################################################
+
+ip link add l0 type dummy
+ip addr add 10.254.254.1 dev l0
+ip link set l0 up
+
+return 0
