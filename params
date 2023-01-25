@@ -25,6 +25,7 @@
 
 NET_IF=ens160
 NET_IF_OPTIONS=tcpflags,logmartians,nosmurfs
+NET_WHITELIST=1.1.1.1,2.2.2.2
 
 WG_BINDING_01=13122
 WG_BINDING_02=13123
