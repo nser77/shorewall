@@ -9,4 +9,6 @@
 #
 ###############################################################################
 
-ip link delete l0
+if ip link show l0 >/dev/null 2>&1; then
+        ip link delete l0
+fi
